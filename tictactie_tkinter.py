@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 
-def prass(button):
+def press(button):
 	global turn
 	if turn == 1:
 		b[button].config(text="O")
@@ -33,17 +33,17 @@ line3.pack()
 # b02 b12 b22
 b = {}
 
-b["00"] = Button(line1, text = "", command = lambda: prass("00"))
-b["01"] = Button(line1, text = "", command = lambda: prass("01"))
-b["02"] = Button(line1, text = "", command = lambda: prass("02"))
+b["00"] = Button(line1, text = "", command = lambda: press("00"))
+b["01"] = Button(line1, text = "", command = lambda: press("01"))
+b["02"] = Button(line1, text = "", command = lambda: press("02"))
 
-b["10"] = Button(line2, text = "", command = lambda: prass("10"))
-b["11"] = Button(line2, text = "", command = lambda: prass("11"))
-b["12"] = Button(line2, text = "", command = lambda: prass("12"))
+b["10"] = Button(line2, text = "", command = lambda: press("10"))
+b["11"] = Button(line2, text = "", command = lambda: press("11"))
+b["12"] = Button(line2, text = "", command = lambda: press("12"))
 
-b["20"] = Button(line3, text = "", command = lambda: prass("20"))
-b["21"] = Button(line3, text = "", command = lambda: prass("21"))
-b["22"] = Button(line3, text = "", command = lambda: prass("22"))
+b["20"] = Button(line3, text = "", command = lambda: press("20"))
+b["21"] = Button(line3, text = "", command = lambda: press("21"))
+b["22"] = Button(line3, text = "", command = lambda: press("22"))
 
 b["00"].pack(side=LEFT)
 b["01"].pack(side=LEFT)
@@ -56,6 +56,5 @@ b["12"].pack(side=LEFT)
 b["20"].pack(side=LEFT)
 b["21"].pack(side=LEFT)
 b["22"].pack(side=LEFT)
-# 
 
 window.mainloop()
